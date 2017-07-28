@@ -233,7 +233,7 @@
                             if(data['response'] == true)
                             {
                                 oTable.ajax.reload();
-                               $.bootstrapGrowl('<h4><strong><i class="glyphicon glyphicon-remove-circle"></i> Success</strong></h4><p>' + data.result['message'] + '</p>', {
+                               $.bootstrapGrowl('<h4><strong><i class="glyphicon glyphicon-remove-circle"></i> Success</strong></h4><p>' + data['message'] + '</p>', {
                                    type: "success",
                                    delay: 3000,
                                    allow_dismiss: true
@@ -241,7 +241,7 @@
                             }
                             else
                             {
-                               $.bootstrapGrowl('<h4><strong><i class="glyphicon glyphicon-remove-circle"></i> Fail</strong></h4><p>' + data.result['message'] + '</p>', {
+                               $.bootstrapGrowl('<h4><strong><i class="glyphicon glyphicon-remove-circle"></i> Fail</strong></h4><p>' + data['message'] + '</p>', {
                                    type: "danger",
                                    delay: 3000,
                                    allow_dismiss: true
